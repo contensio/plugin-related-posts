@@ -1,10 +1,18 @@
 {
-    "name": "Related Posts",
-    "slug": "related-posts",
-    "version": "1.0.0",
+    "name": "contensio/plugin-related-posts",
+    "label": "Related Posts",
     "description": "Shows N related posts below content, ranked by the number of shared terms (tags/categories). Also registers a Related Posts widget type.",
     "author": "Contensio",
     "author_url": "https://contensio.com",
-    "requires_contensio": "2.0.0",
-    "provider": "Contensio\\Plugins\\RelatedPosts\\RelatedPostsServiceProvider"
+    "version": "1.0.0",
+    "provider": "Contensio\\Plugins\\RelatedPosts\\RelatedPostsServiceProvider",
+    "autoload": {
+        "psr-4": {
+            "Contensio\\Plugins\\RelatedPosts\\": "src/"
+        }
+    },
+    "requires": {
+        "cms": "^0.1"
+    },
+    "removable": true
 }
