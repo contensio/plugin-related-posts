@@ -1,6 +1,6 @@
 {
     "name": "contensio/plugin-related-posts",
-    "description": "Related posts plugin for Contensio — surfaces related content ranked by shared terms.",
+    "description": "Related posts plugin for Contensio - surfaces related content ranked by shared terms.",
     "type": "contensio-plugin",
     "license": "MIT",
     "require": {

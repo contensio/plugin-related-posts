@@ -41,7 +41,7 @@ class RelatedPosts
                 ->get();
         }
 
-        // No terms — fall back to most recent of the same type
+        // No terms - fall back to most recent of the same type
         return Content::where('status', Content::STATUS_PUBLISHED)
             ->where('id', '!=', $content->id)
             ->where('content_type_id', $content->content_type_id)

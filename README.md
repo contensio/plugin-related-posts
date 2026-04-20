@@ -94,7 +94,7 @@ $related = RelatedPosts::for($content, limit: 4, langId: $lang->id);
 
 foreach ($related as $post) {
     $translation = $post->translations->first();
-    echo $translation->title . ' — ' . $post->shared_terms . ' shared terms';
+    echo $translation->title . ' - ' . $post->shared_terms . ' shared terms';
 }
 ```
 
@@ -104,7 +104,7 @@ The `shared_terms` attribute is appended by the query (absent in fallback mode).
 
 ## Widget
 
-The plugin also registers a `related-posts` widget type in the admin widget builder. Because widget areas don't have single-post context, the widget renders a static note rather than a live list — the inline hook version is the primary display mechanism.
+The plugin also registers a `related-posts` widget type in the admin widget builder. Because widget areas don't have single-post context, the widget renders a static note rather than a live list - the inline hook version is the primary display mechanism.
 
 ---
 

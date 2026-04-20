@@ -31,9 +31,9 @@ class RelatedPostsWidget implements WidgetInterface
 
     public function render(array $config): string
     {
-        // Widget areas don't have direct post context — render a placeholder.
+        // Widget areas don't have direct post context - render a placeholder.
         // The inline hook version is the primary related-posts display.
-        return view('related-posts::widgets.related-posts', [
+        return view('contensio-related-posts::widgets.related-posts', [
             'title' => $config['title'] ?? 'Related Posts',
             'posts' => collect(),
             'note'  => 'Related posts are shown automatically below single post content.',

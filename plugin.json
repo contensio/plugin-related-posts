@@ -4,7 +4,7 @@
     "description": "Shows N related posts below content, ranked by the number of shared terms (tags/categories). Also registers a Related Posts widget type.",
     "author": "Contensio",
     "author_url": "https://contensio.com",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "provider": "Contensio\\Plugins\\RelatedPosts\\RelatedPostsServiceProvider",
     "autoload": {
         "psr-4": {
